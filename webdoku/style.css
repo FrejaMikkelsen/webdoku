@@ -1,0 +1,1850 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+body,
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebdfcc;
+    background-image: url(images/baggrund.png);
+
+}
+
+/*--------------Progress-bar-------------------*/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    height: 100%;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    background-image: url("images/progress-bar.png");
+    background-repeat: repeat-y;
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*progressbar-slut*/
+
+.logo {
+    padding: 2%;
+    position: sticky;
+    z-index: -99;
+    opacity: 100%;
+}
+
+
+/* -------- Cookie consent START  ----------- */
+
+.cookieconsent {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.content-wrap {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    color: black;
+    line-height: 1.3em;
+}
+
+
+.btn-primary {
+    margin: 0 auto;
+    padding: 0.7%;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1%;
+}
+/* -------------------- Cookie slut ----------- */
+
+/* -------------------- HEADER VIDEO START ----------- */
+.headervid {
+    width: 100%;
+    max-height: 520px;
+    margin-top: -8%;
+    overflow: hidden;
+
+}
+
+#headervid {
+    position: inherit;
+    max-width: 100%;
+    padding-bottom: 40%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.headervid video {
+    opacity: 80%;
+}
+
+/* -------- HEADER VIDEO SLUT ----------- */
+/* ------------------ KUNST TEKST START ----------- */
+
+.line-1 {
+    padding: 2% 0% 0% 30%;
+}
+
+.line-2 {
+    font-size: 4.8em;
+    padding: 0% 0% 5% 60%;
+}
+
+
+#tekst-afsnit1 {
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2em;
+}
+
+/*-------------------Video------------------*/
+.klank-video {
+    width: 860px;
+    height: 525px;
+}
+
+.video {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/* ----------- KUNST TEKST SLUT ----------- */
+
+/*----------video------------------*/
+
+.video {
+    text-align: center;
+}
+
+
+/* -------------------- VIDEO GALLERI -------------- */
+.video-collage {
+    width: 300px;
+    height: 150px;
+}
+
+.flex-video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.zoom video {
+    transition: transform .2s;
+    width: 288px;
+    height: 100%;
+    padding: 0;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.kunstformer-h2 {
+    font-size: 2.5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.kunstformer-p {
+    font-size: 1.4em;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2em;
+}
+
+
+
+.kunstformer-sections {
+    display: flex;
+    padding-top: 2em;
+    flex-wrap: wrap;
+}
+
+.kunstformer-sections h2 {
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 1em;
+    font-size: 2.1em;
+}
+
+.kunstformer-sections p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.sektion-venstre {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sektion-hojre {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.sektion-venstre p {
+    padding-left: 7em;
+}
+
+.sektion-hojre p {
+    padding-right: 7em;
+}
+
+.sektion-venstre img {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.sektion-hojre img {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.kunstformer-tekst {
+    width: 60%;
+}
+
+.kunstformer-tekst p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.kunstformer-billede {
+    width: 70%;
+}
+
+.kunstformer-billede img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+.container-installationskunst {
+    padding-left: 7.5em;
+    padding-bottom: 1em;
+}
+
+.container-skravering {
+    padding-left: 7.5em;
+}
+
+.container-tegning {
+    padding-left: 7.5em;
+}
+
+#section-installa {
+    padding-top: 5em;
+    padding-bottom: 10em;
+}
+
+#section-maling {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#section-skravering {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#section-skulptur {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#section-tegning {
+    padding-top: 10em;
+    padding-bottom: 15em;
+}
+
+/*tekst-animation*/
+
+.maling-lab {
+    /*størrelse på overskrift animation*/
+    width: 30%;
+}
+
+.installationskunst-lab {
+    /*størrelse på overskrift animation*/
+    width: 90%;
+}
+
+.skravering-lab {
+    /*størrelse på overskrift animation*/
+    width: 50%;
+}
+
+.skulptur-lab {
+    /*størrelse på overskrift animation*/
+    width: 40%;
+}
+
+.tegning-lab {
+    /*størrelse på overskrift animation*/
+    width: 40%;
+}
+
+.maling-lab {
+    /*farve, tykkelse og runding på skrift animation*/
+    cursor: pointer;
+    fill: black;
+    left: 0;
+    top: 0;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.maling-lab .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.installationskunst-lab {
+    /*farve, tykkelse og runding på skrift animation*/
+    cursor: pointer;
+    fill: black;
+    left: 0;
+    top: 0;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.installationskunst-lab .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.skravering-lab {
+    /*farve, tykkelse og runding på skrift animation*/
+    cursor: pointer;
+    fill: black;
+    left: 0;
+    top: 0;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skravering-lab .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.skulptur-lab {
+    /*farve, tykkelse og runding på skrift animation*/
+    cursor: pointer;
+    fill: black;
+    left: 0;
+    top: 0;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skulptur-lab .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.tegning-lab {
+    /*farve, tykkelse og runding på skrift animation*/
+    cursor: pointer;
+    fill: black;
+    left: 0;
+    top: 0;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.tegning-lab .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+@keyframes strokeOffset {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*Maling animation*/
+
+#mask-maling-m {
+    animation: strokeOffset 1s linear forwards;
+}
+
+#mask-maling-a {
+    animation: strokeOffset 1s linear forwards 1s;
+}
+
+#mask-maling-l {
+    animation: strokeOffset 0.5s linear forwards 2s;
+}
+
+#mask-maling-i-1 {
+    animation: strokeOffset 0.5s linear forwards 2.5s;
+}
+
+#mask-maling-i-2 {
+    animation: strokeOffset 0.5s linear forwards 3s;
+}
+
+#mask-maling-n-1 {
+    animation: strokeOffset 0.5s linear forwards 3.5s;
+}
+
+#mask-maling-n-2 {
+    animation: strokeOffset 0.5s linear forwards 4s;
+}
+
+#mask-maling-g {
+    animation: strokeOffset 1s linear forwards 4.5s;
+}
+
+/*INSTALLATIONSKUNST animation*/
+
+
+#mask-installa-i1-1 {
+    animation: strokeOffset 0.2s linear forwards;
+}
+
+#mask-installa-i1-2 {
+    animation: strokeOffset 0.2s linear forwards 0.2s;
+}
+
+#mask-installa-i1-3 {
+    animation: strokeOffset 0.2s linear forwards 0.4s;
+}
+
+#mask-installa-n1-1 {
+    animation: strokeOffset 0.2s linear forwards 0.6s;
+}
+
+#mask-installa-n1-2 {
+    animation: strokeOffset 0.2s linear forwards 0.8s;
+}
+
+#mask-installa-s1-1 {
+    animation: strokeOffset 0.2s linear forwards 1s;
+}
+
+#mask-installa-t1-1 {
+    animation: strokeOffset 0.2s linear forwards 1.2s;
+}
+
+#mask-installa-t1-2 {
+    animation: strokeOffset 0.2s linear forwards 1.4s;
+}
+
+#mask-installa-a1-1 {
+    animation: strokeOffset 0.2s linear forwards 1.6s;
+}
+
+#mask-installa-l1-1 {
+    /*Denne skal findes*/
+    animation: strokeOffset 0.2s linear forwards 1.8s;
+}
+
+#mask-installa-l2-1 {
+    animation: strokeOffset 0.2s linear forwards 2s;
+}
+
+#mask-installa-a2-1 {
+    animation: strokeOffset 0.2s linear forwards 2.2s;
+}
+
+#mask-installa-t2-1 {
+    animation: strokeOffset 0.2s linear forwards 2.4s;
+}
+
+#mask-installa-t2-2 {
+    animation: strokeOffset 0.2s linear forwards 2.6s;
+}
+
+#mask-installa-i2-1 {
+    animation: strokeOffset 0.2s linear forwards 2.8s;
+}
+
+#mask-installa-i2-2 {
+    animation: strokeOffset 0.2s linear forwards 3s;
+}
+
+#mask-installa-o-1 {
+    animation: strokeOffset 0.2s linear forwards 3.2s;
+}
+
+#mask-installa-n2-1 {
+    animation: strokeOffset 0.2s linear forwards 3.4s;
+}
+
+#mask-installa-n2-2 {
+    animation: strokeOffset 0.2s linear forwards 3.6s;
+}
+
+#mask-installa-s2-1 {
+    animation: strokeOffset 0.2s linear forwards 3.8s;
+}
+
+#mask-installa-k-1 {
+    animation: strokeOffset 0.2s linear forwards 4s;
+}
+
+#mask-installa-k-2 {
+    animation: strokeOffset 0.2s linear forwards 4.2s;
+}
+
+#mask-installa-u-1 {
+    animation: strokeOffset 0.2s linear forwards 4.4s;
+}
+
+#mask-installa-n3-1 {
+    animation: strokeOffset 0.2s linear forwards 4.6s;
+}
+
+#mask-installa-n3-2 {
+    animation: strokeOffset 0.2s linear forwards 4.8s;
+}
+
+#mask-installa-s3-1 {
+    animation: strokeOffset 0.2s linear forwards 5s;
+}
+
+#mask-installa-t3-1 {
+    animation: strokeOffset 0.2s linear forwards 5.2s;
+}
+
+#mask-installa-t3-2 {
+    animation: strokeOffset 0.2s linear forwards 5.4s;
+}
+
+/*SKRAVERING animation*/
+
+#mask-skravering-s {
+    animation: strokeOffset 0.5s linear forwards;
+}
+
+#mask-skravering-k1 {
+    animation: strokeOffset 0.5s linear forwards 0.5s;
+}
+
+#mask-skravering-k2 {
+    animation: strokeOffset 0.5s linear forwards 1s;
+}
+
+#mask-skravering-r1-1 {
+    animation: strokeOffset 0.5s linear forwards 1.5s;
+}
+
+#mask-skravering-r1-2 {
+    animation: strokeOffset 0.5s linear forwards 2s;
+}
+
+#mask-skravering-a {
+    animation: strokeOffset 0.5s linear forwards 2.5s;
+}
+
+#mask-skravering-v {
+    animation: strokeOffset 0.5s linear forwards 3s;
+}
+
+#mask-skravering-e {
+    animation: strokeOffset 0.5s linear forwards 3.5s;
+}
+
+#mask-skravering-r2 {
+    animation: strokeOffset 0.5s linear forwards 4s;
+}
+
+#mask-skravering-i1 {
+    animation: strokeOffset 0.5s linear forwards 4.5s;
+}
+
+#mask-skravering-i2 {
+    animation: strokeOffset 0.5s linear forwards 5s;
+}
+
+#mask-skravering-n {
+    animation: strokeOffset 0.5s linear forwards 5.5s;
+}
+
+#mask-skravering-g {
+    animation: strokeOffset 0.5s linear forwards 6s;
+}
+
+/*SKULPTUR animation*/
+#mask-skulptur-s {
+    animation: strokeOffset 0.5s linear forwards;
+}
+
+#mask-skulptur-k1 {
+    animation: strokeOffset 0.5s linear forwards 0.5s;
+}
+
+#mask-skulptur-k2 {
+    animation: strokeOffset 0.5s linear forwards 1s;
+}
+
+#mask-skulptur-u1 {
+    animation: strokeOffset 0.5s linear forwards 1.5s;
+}
+
+#mask-skulptur-l {
+    animation: strokeOffset 0.5s linear forwards 2s;
+}
+
+#mask-skulptur-p1 {
+    animation: strokeOffset 0.5s linear forwards 2.5s;
+}
+
+#mask-skulptur-p2 {
+    animation: strokeOffset 0.5s linear forwards 3s;
+}
+
+#mask-skulptur-t1 {
+    animation: strokeOffset 0.5s linear forwards 3.5s;
+}
+
+#mask-skulptur-t2 {
+    animation: strokeOffset 0.5s linear forwards 4s;
+}
+
+#mask-skulptur-u2 {
+    animation: strokeOffset 0.5s linear forwards 4.5s;
+}
+
+#mask-skulptur-r {
+    animation: strokeOffset 0.5s linear forwards 5s;
+}
+
+/*TEGNING animation*/
+
+#mask-tegning-t1 {
+    animation: strokeOffset 0.5s linear forwards;
+}
+
+#mask-tegning-t2 {
+    animation: strokeOffset 0.5s linear forwards 0.5s;
+}
+
+#mask-tegning-e {
+    animation: strokeOffset 0.5s linear forwards 1s;
+}
+
+#mask-tegning-g1 {
+    animation: strokeOffset 0.5s linear forwards 1.5s;
+}
+
+#mask-tegning-n1 {
+    animation: strokeOffset 0.5s linear forwards 2s;
+}
+
+#mask-tegning-i1 {
+    animation: strokeOffset 0.5s linear forwards 2.5s;
+}
+
+#mask-tegning-i2 {
+    animation: strokeOffset 0.5s linear forwards 3s;
+}
+
+#mask-tegning-n2 {
+    animation: strokeOffset 0.5s linear forwards 3.5s;
+}
+
+#mask-tegning-g2 {
+    animation: strokeOffset 0.5s linear forwards 4s;
+}
+
+
+/* -------- VIDEO AFSNIT SLUT ----------- */
+/* -------- LOGO FADE IN START  ----------- */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-11-8 11:28:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+.fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* -------------------------- SLIDESHOW ---------------------------------------------*/
+.slideshow {
+    margin: 0 auto;
+    padding-left: 5%;
+    width: 80%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10%;
+   
+
+}
+
+.slideshow-item {
+
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 31s infinite;
+    
+    
+
+}
+
+.slideshow-item:nth-child(1) {
+    animation-delay: 0s;
+
+}
+.slideshow-item:nth-child(2) {
+    animation-delay: 7s;
+
+}
+
+.slideshow-item:nth-child(3) {
+    animation-delay: 14s;
+
+}
+
+.slideshow-item:nth-child(4) {
+    animation-delay: 21s;
+
+}
+
+.slideshow-item:nth-child(5) {
+    animation-delay: 28s;
+
+}
+
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slideshow-item-text {
+    max-width: 50%;
+    position: absolute;
+    top:50%;
+    left: 0%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    padding: 3% 3%;
+
+}
+
+.slideshow-item-text h5{
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin: 2%;
+}
+
+
+
+@keyframes cycleImages {
+    25%{
+opacity: 1;
+}
+    40% {
+opacity: 0;
+    }
+}
+
+
+/* -------------------------- SLIDESHOW SLUT ------------------ KOPIER HER TIL --------------------------------------------*/
+
+/* ----------- FOOTER -----------*/
+
+
+.footer {
+    position: relative;
+}
+
+.footer-billede {
+    width: 100%;
+}
+
+.footer-billede img {
+    width: 1200px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index: -10;
+}
+
+.app {
+    z-index: 10;
+    width: 450px;
+    height: 430px;
+    position: absolute;
+    top: 13.5%;
+    padding-left: 12.5%;
+}
+
+.app .controls {
+    height: 50px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 0px 5px;
+}
+
+.app .controls .type,
+.app .controls .size,
+.app .controls .color {
+    margin: 0px 5px;
+}
+
+.app .controls .type input {
+    display: none;
+}
+
+.app .controls .type label {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.app .controls .type input:checked+label {
+    background: #111;
+    color: #eee;
+    border-radius: 50%;
+}
+
+.app .controls .size input {
+    height: 10px;
+}
+
+.app .controls .actions {
+    flex: 1;
+    text-align: right;
+}
+
+.app .controls .actions button {
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.sidsteafsnit {
+    position: absolute;
+    width: 30%;
+    top: 10em;
+    left: 55%;
+    z-index: 10;
+}
+
+.sidsteafsnit-tekst {
+    text-align: justify;
+}
+
+.sidsteafsnit-tekst h2 {
+    padding-bottom: 1em;
+    font-size: 2.1em;
+}
+
+.sidsteafsnit-tekst p {
+    padding-bottom: 2em;
+    font-size: 18px;
+}
+
+.tegne-tekst {
+    text-align: center;
+    padding-top: 5em;
+    font-size: 18px;
+}
+
+.footer-knap {
+    background-color: sienna;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 4.5em);
+}
+
+.footer-knap:hover {
+    background-color: rgb(187, 133, 108);
+}
+
+.footer-knap a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons {
+    padding-top: 4em;
+    display: block;
+    width: 100%;
+}
+
+.footer-icons ul {
+    text-align: center;
+}
+
+.footer-icons li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-icons li img {
+    width: 60%;
+}
+
+.logo-footer {
+    text-align: center;
+    padding-top: 8em;
+}
+
+.logo-footer img {
+    width: 50%;
+    opacity: 40%;
+}
+
+
+/*-------------------------------MEDIA-----------------------------------------*/
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    /*--------------Progress-bar-------------------*/
+
+    #progressbar {
+        display: none;
+    }
+
+    #headervid {
+        padding-bottom: 10%;
+    }
+
+    /* -------- HEADER VIDEO SLUT ----------- */
+    /* ------------------ KUNST TEKST START ----------- */
+
+    .line-1 {
+        padding: 0 50% 0 0;
+    }
+
+    .line-1 img {
+        width: 250px;
+    }
+
+
+    .line-2 {
+        font-size: 2em;
+    }
+
+
+    #tekst-afsnit1 {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1em;
+    }
+
+    /*-------------------Video------------------*/
+    .video {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    /* ----------- KUNST TEKST SLUT ----------- */
+
+    /*----------video------------------*/
+
+    .klank-video {
+        width: 287px;
+        height: 175px;
+    }
+    .video {
+        text-align: center;
+    }
+
+
+    /* -------------------- VIDEO GALLERI -------------- */
+
+    .flex-video {
+        display: none;
+    }
+
+    .kunstformer-p {
+        font-size: 10px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .kunstformer-sections {
+        display: flex;
+        padding-top: 2em;
+        flex-wrap: wrap;
+    }
+
+    .kunstformer-sections h2 {
+        padding-bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    .kunstformer-sections p {
+        font-size: 16px;
+    }
+
+    .sektion-venstre {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .sektion-hojre {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .sektion-venstre p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .sektion-hojre p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .sektion-venstre img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .sektion-hojre img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .kunstformer-tekst {
+        width: 100%;
+    }
+    
+    .kunstformer-tekst p {
+        font-size: 16px;
+    }
+    
+    .kunstformer-billede {
+        width: 100%;
+    }
+    
+    .container-installationskunst {
+        padding-left: 1em;
+    }
+
+    .container-maling{
+        padding-left: 1em;
+    }
+    
+    .container-skravering {
+        padding-left: 1em;
+    }
+
+    .container-skulptur {
+        padding-left: 1em;
+    }
+    
+    .container-tegning {
+        padding-left: 1em;
+    }
+    
+    #section-installa {
+        padding-top: 3em;
+        padding-bottom: 5em;
+    }
+    
+    #section-maling {
+        padding-top: 0;
+        padding-bottom: 5em;
+    }
+    
+    #section-skravering {
+        padding-top: 0;
+        padding-bottom: 5em;
+    }
+    
+    #section-skulptur {
+        padding-top: 0;
+        padding-bottom: 5em;
+    }
+    
+    #section-tegning {
+        padding-top: 0;
+        padding-bottom: 5em;
+    }
+
+    /* -------------------------- SLIDESHOW ---------------------------------------------*/
+.slideshow {
+    padding-left: 0;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 3em;
+}
+
+
+.slideshow-item-text {
+    max-width: 70%;
+   
+
+}
+
+.slideshow-item-text h5{
+    font-size: 1em;
+}
+    /* ----------- FOOTER -----------*/
+
+
+.footer {
+    position: relative;
+}
+
+.footer-billede {
+    width: 100%;
+}
+
+.footer-billede img {
+    width: 100%;
+    padding-top: 3em;
+}
+
+.app {
+    display: none;
+}
+
+
+.sidsteafsnit {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.sidsteafsnit-tekst {
+    text-align: justify;
+}
+
+.sidsteafsnit-tekst h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sidsteafsnit-tekst p {
+    padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 16px;
+}
+
+.tegne-tekst {
+    display: none;
+}
+
+.footer-knap {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 5em);
+}
+
+.footer-knap:hover {
+    background-color: rgb(187, 133, 108);
+}
+
+.footer-knap a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons {
+    padding-top: 4em;
+    display: block;
+    width: 100%;
+}
+
+.footer-icons ul {
+    text-align: center;
+    padding: 0;
+}
+
+.footer-icons li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-icons li img {
+    width: 30%;
+}
+
+.logo-footer {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.logo-footer img {
+    width: 50%;
+    opacity: 40%;
+}
+
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 575px) {
+    
+    .line-1 {
+        padding: 0 70% 0 10%;
+    }
+
+    .line-1 img {
+        width: 300px;
+    }
+
+
+    .line-2 {
+        font-size: 3em;
+        padding: 0% 0% 5% 40%;
+    }
+
+    .klank-video {
+        width: 400px;
+        height: 225px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .line-1 {
+        padding: 0 70% 0 10%;
+    }
+
+    .line-1 img {
+        width: 300px;
+    }
+
+
+    .line-2 {
+        font-size: 3em;
+        padding: 0% 0% 5% 40%;
+    }
+
+    .klank-video {
+        width: 500px;
+        height: 280px;
+    }
+
+        /* -------------------------- SLIDESHOW ---------------------------------------------*/
+.slideshow {
+    padding-left: 1.3%;
+    width: 98%;
+    height: 70vh;
+    margin-bottom: 3em;
+}
+
+.slideshow-item-text {
+    max-width: 70%;
+}
+
+.slideshow-item-text h5{
+    font-size: 1.5em;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  
+/* ------------------ KUNST TEKST START ----------- */
+
+.line-1 {
+    padding: 2% 0% 0% 10%;
+}
+
+#tekst-afsnit1 {
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*-------------------Video------------------*/
+.klank-video {
+    width: 700px;
+    height: 395px;
+}
+
+.video {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/* -------------------- VIDEO GALLERI -------------- */
+
+
+.zoom video {
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+.kunstformer-p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.kunstformer-sections {
+    display: flex;
+    padding-top: 2em;
+    flex-wrap: wrap;
+}
+
+
+.sektion-venstre {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sektion-hojre {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.sektion-venstre p {
+    padding-left: 1em;
+}
+
+.sektion-hojre p {
+    padding-right: 1em;
+}
+
+.sektion-venstre img {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.sektion-hojre img {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.container-installationskunst {
+    padding-left: 1em;
+}
+
+.container-skravering {
+    padding-left: 1em;
+}
+
+.container-tegning {
+    padding-left: 1em;
+}
+
+
+/*tekst-animation*/
+
+.maling-lab {
+    /*størrelse på overskrift animation*/
+    width: 40%;
+}
+
+.installationskunst-lab {
+    /*størrelse på overskrift animation*/
+    width: 100%;
+}
+
+.skravering-lab {
+    /*størrelse på overskrift animation*/
+    width: 60%;
+}
+
+.skulptur-lab {
+    /*størrelse på overskrift animation*/
+    width: 60%;
+}
+
+.tegning-lab {
+    /*størrelse på overskrift animation*/
+    width: 60%;
+}
+
+#section-tegning {
+    padding-bottom: 5em;
+}
+
+ /* -------------------------- SLIDESHOW ---------------------------------------------*/
+        .slideshow {
+            padding-left: 1.3%;
+            width: 98%;
+            height: 70vh;
+            margin-bottom: 3em;
+        }
+        
+        .slideshow-item-text {
+            max-width: 50%;
+        }
+        
+        .slideshow-item-text h5{
+            font-size: 1.5em;
+        }
+        
+
+/* ----------- FOOTER -----------*/
+
+
+.footer {
+    position: relative;
+}
+
+.footer-billede {
+width: 100%;
+padding-top: 20em;
+}
+
+.footer-billede img {
+    width: 1200px;
+}
+
+.app {
+    top: 37%;
+    padding-left: 7.5%;
+}
+
+.sidsteafsnit {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidsteafsnit-tekst {
+    text-align: justify;
+}
+
+.sidsteafsnit-tekst h2 {
+    padding-bottom: 1em;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+.sidsteafsnit-tekst p {
+    padding-bottom: 3em;
+    font-size: 18px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.tegne-tekst {
+    text-align: center;
+    padding-top: 5em;
+    font-size: 18px;
+}
+
+.footer-knap {
+    transform: translate(-50%, 4em);
+}
+
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1250px) {
+  
+    /* ------------------ KUNST TEKST START ----------- */
+    
+    .line-1 {
+        padding: 2% 0% 0% 8%;
+    }
+    
+    #tekst-afsnit1 {
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+.line-2{padding: 0% 0% 5% 45%;}
+    
+    /*-------------------Video------------------*/
+    .klank-video {
+        width: 800px;
+        height: 500px;
+    }
+    
+    .video {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    
+    /* -------------------- VIDEO GALLERI -------------- */
+    
+    
+    .zoom video {
+        max-width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    
+    
+    .kunstformer-p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .kunstformer-sections {
+        display: flex;
+        padding-top: 2em;
+        flex-wrap: wrap;
+    }
+    
+    
+    .sektion-venstre {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .sektion-hojre {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+    
+    }
+    
+    .sektion-venstre p {
+        padding-left: 1em;
+    }
+    
+    .sektion-hojre p {
+        padding-right: 1em;
+    }
+    
+    .sektion-venstre img {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .sektion-hojre img {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .container-installationskunst {
+        padding-left: 1em;
+    }
+    
+    .container-skravering {
+        padding-left: 1em;
+    }
+    
+    .container-tegning {
+        padding-left: 1em;
+    }
+    
+    
+    /*tekst-animation*/
+    
+    .maling-lab {
+        /*størrelse på overskrift animation*/
+        width: 40%;
+    }
+    
+    .installationskunst-lab {
+        /*størrelse på overskrift animation*/
+        width: 100%;
+    }
+    
+    .skravering-lab {
+        /*størrelse på overskrift animation*/
+        width: 60%;
+    }
+    
+    .skulptur-lab {
+        /*størrelse på overskrift animation*/
+        width: 60%;
+    }
+    
+    .tegning-lab {
+        /*størrelse på overskrift animation*/
+        width: 60%;
+    }
+    
+    #section-tegning {
+        padding-bottom: 10em;
+    }
+    
+
+ /* -------------------------- SLIDESHOW ---------------------------------------------*/
+ .slideshow {
+    width: 90%;
+    height: 70vh;
+
+}
+
+.slideshow-item-text {
+    max-width: 50%;
+}
+
+.slideshow-item-text h5{
+    font-size: 1.5em;
+}
+
+
+
+    /* ----------- FOOTER -----------*/
+    
+    
+    .footer {
+        position: relative;
+    }
+    
+    .footer-billede {
+    width: 100%;
+    }
+    
+    .footer-billede img {
+        width: 1200px;
+    }
+    
+    .app {
+        top: 13%;
+        padding-left: 6%;
+    }
+    
+    .sidsteafsnit {
+       width: 40%;
+    }
+    
+    .sidsteafsnit-tekst {
+        text-align: justify;
+    }
+    
+    .sidsteafsnit-tekst h2 {
+        padding-bottom: 1em;
+        font-size: 2.1em;
+        text-align: center;
+    }
+    
+    .sidsteafsnit-tekst p {
+        padding-bottom: 3em;
+        font-size: 18px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .tegne-tekst {
+        text-align: center;
+        padding-top: 2em;
+        font-size: 18px;
+    }
+    
+    .footer-knap {
+        transform: translate(-50%, 5em);
+    }
+    
+    }
+    @media screen and (min-width:  1251px) and (max-width: 1439px) {
+  
+        /* ------------------ KUNST TEKST START ----------- */
+        
+        
+     
+        .zoom video {
+            max-width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+
+
+ /* -------------------------- SLIDESHOW ---------------------------------------------*/
+ .slideshow {
+    padding-left: 1.3%;
+    width: 80%;
+    height: 70vh;
+    margin-bottom: 3em;
+}
+
+.slideshow-item-text {
+    max-width: 50%;
+}
+
+.slideshow-item-text h5{
+    font-size: 1.5em;
+}
+
+
+    
+        /* ----------- FOOTER -----------*/
+        
+        
+        .footer {
+            position: relative;
+        }
+        
+        .footer-billede {
+        width: 100%;
+        }
+        
+        .footer-billede img {
+            width: 1200px;
+        }
+        
+        .app {
+            top: 13%;
+            padding-left: 7.5%;
+        }
+    }
+    
+    
+        
+    
